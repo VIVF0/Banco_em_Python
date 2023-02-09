@@ -51,6 +51,7 @@ class Conta(Cliente):
             
     def depositar(self,valor):
         self._saldo+=valor
+        print("Deposito Realizado com Sucesso!!!")
         
     def tranfere(self, valor, destino,senha):
         if(self.verifica_senha(senha)):
@@ -81,24 +82,24 @@ class Conta(Cliente):
 
 
 #ZONA DE EXECUÇÃO:   
-Vitor=Cliente('JOAO PINTO','1559905669','20/10/2011','Masculino')    
+"""Vitor=Cliente('JOAO PINTO','1559905669','20/10/2011','Masculino')    
 Nian=Cliente('PEDRO paulo','2112121212','18/02/2098','Masculino')
 
 Conta0=Conta(1001,2212125,2330,'poupança',Nian,'senha123')
 Conta1=Conta(1001,1000235,20,'corrente',Vitor,'senha123')
 
-""" print(Conta0)
+ print(Conta0)
 Conta0.extrato()
 Conta0.depositar(100)
 Conta0.extrato()
 Conta0.limite=10000
 print(Conta0.titular)
 print(Conta0.limite)
- """
+ 
 
 print(Conta1)
 Conta1.extrato()
 Conta1.sacar(6000,'senha123')
 Conta1.sacar(200,'errada123')
 Conta1.extrato()
-Conta1.tranfere(1,Conta0,'errado')
+Conta1.tranfere(1,Conta0,'errado')"""
